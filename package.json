@@ -4,15 +4,22 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "postinstall": "husky install",
+    "lint": "eslint . --ext .js,.vue --ignore-path .eslintignore --max-warnings 0"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "husky": "^8.0.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.15",
     "@vue/cli-service": "~4.5.15",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^9.1.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
